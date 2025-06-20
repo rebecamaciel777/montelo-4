@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become an Installer - MONTELO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-sun"></i>
+                        <span class="brand-text">MONTELO</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="providers.html" class="nav-link">Providers</a>
+                    <a href="financing.html" class="nav-link">Financing</a>
+                    <a href="installers.html" class="nav-link">Installers</a>
+                    <a href="list-business.html" class="btn btn-primary">List Business</a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav">
+                    <button class="theme-toggle" id="mobileThemeToggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Dropdown -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="providers.html" class="mobile-menu-link">Providers</a>
+                <a href="financing.html" class="mobile-menu-link">Financing</a>
+                <a href="installers.html" class="mobile-menu-link">Installers</a>
+                <a href="list-business.html" class="btn btn-primary mobile-menu-btn-cta">List Business</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Become a Certified Installer</h1>
+            <p class="page-subtitle">Join our network of professional solar installers and grow your business</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Join MONTELO?</h2>
+            <div class="cards-grid">
+                <div class="card card-hover">
+                    <div class="card-header">
+                        <div class="card-icon card-icon-blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Quality Leads</h3>
+                    </div>
+                    <p class="card-description">
+                        Get connected with pre-qualified customers actively seeking solar installation services in your area.
+                    </p>
+                </div>
+
+                <div class="card card-hover">
+                    <div class="card-header">
+                        <div class="card-icon card-icon-orange">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="card-title">Certification Support</h3>
+                    </div>
+                    <p class="card-description">
+                        Access training resources and certification programs to enhance your skills and credibility.
+                    </p>
+                </div>
+
+                <div class="card card-hover">
+                    <div class="card-header">
+                        <div class="card-icon card-icon-yellow">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">Business Growth</h3>
+                    </div>
+                    <p class="card-description">
+                        Expand your customer base and increase revenue with our marketing and lead generation tools.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements-section">
+        <div class="container">
+            <div class="requirements-content">
+                <div class="requirements-text">
+                    <h2 class="section-title">Requirements</h2>
+                    <div class="requirements-list">
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Licensed & Insured</h4>
+                                <p>Valid contractor's license and comprehensive insurance coverage</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Experience</h4>
+                                <p>Minimum 2 years of solar installation experience</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Certifications</h4>
+                                <p>NABCEP certification or equivalent industry credentials</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Service Area</h4>
+                                <p>Ability to service customers within your designated region</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="requirements-image">
+                    <img src="/placeholder.svg?height=400&width=500" alt="Solar Installation" style="width: 100%; height: auto; border-radius: 1rem;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-section">
+        <div class="container">
+            <div class="application-content">
+                <h2 class="section-title">Apply to Become an Installer</h2>
+                <p class="section-subtitle">Fill out the form below and we'll review your application within 2-3 business days</p>
+                
+                <form class="installer-application-form" id="installerApplicationForm">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-user"></i>
+                            Personal Information
+                        </h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-building"></i>
+                            Business Information
+                        </h3>
+                        
+                        <div class="form-group">
+                            <label for="businessName">Business Name *</label>
+                            <input type="text" id="businessName" name="businessName" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="businessType">Business Type *</label>
+                                <select id="businessType" name="businessType" required>
+                                    <option value="">Select business type</option>
+                                    <option value="sole-proprietorship">Sole Proprietorship</option>
+                                    <option value="llc">LLC</option>
+                                    <option value="corporation">Corporation</option>
+                                    <option value="partnership">Partnership</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="yearsInBusiness">Years in Business *</label>
+                                <select id="yearsInBusiness" name="yearsInBusiness" required>
+                                    <option value="">Select years</option>
+                                    <option value="1-2">1-2 years</option>
+                                    <option value="3-5">3-5 years</option>
+                                    <option value="6-10">6-10 years</option>
+                                    <option value="10+">10+ years</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="businessAddress">Business Address *</label>
+                            <input type="text" id="businessAddress" name="businessAddress" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <select id="state" name="state" required>
+                                    <option value="">Select state</option>
+                                    <option value="CA">California</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="NY">New York</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="MA">Massachusetts</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCode">ZIP Code *</label>
+                                <input type="text" id="zipCode" name="zipCode" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Licensing & Certifications -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-certificate"></i>
+                            Licensing & Certifications
+                        </h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="licenseNumber">Contractor License Number *</label>
+                                <input type="text" id="licenseNumber" name="licenseNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="licenseState">License State *</label>
+                                <select id="licenseState" name="licenseState" required>
+                                    <option value="">Select state</option>
+                                    <option value="CA">California</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="NY">New York</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="MA">Massachusetts</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="certifications">Certifications *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="certifications" value="nabcep">
+                                    <span class="checkmark"></span>
+                                    NABCEP PV Installation Professional
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="certifications" value="osha">
+                                    <span class="checkmark"></span>
+                                    OSHA 10/30 Safety Certification
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="certifications" value="electrical">
+                                    <span class="checkmark"></span>
+                                    Electrical License
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="certifications" value="other">
+                                    <span class="checkmark"></span>
+                                    Other (specify in additional info)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="insuranceProvider">Insurance Provider *</label>
+                                <input type="text" id="insuranceProvider" name="insuranceProvider" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="insuranceAmount">Coverage Amount *</label>
+                                <select id="insuranceAmount" name="insuranceAmount" required>
+                                    <option value="">Select coverage</option>
+                                    <option value="500k">$500,000</option>
+                                    <option value="1m">$1,000,000</option>
+                                    <option value="2m">$2,000,000</option>
+                                    <option value="5m">$5,000,000+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience & Portfolio -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-tools"></i>
+                            Experience & Portfolio
+                        </h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="solarExperience">Years of Solar Experience *</label>
+                                <select id="solarExperience" name="solarExperience" required>
+                                    <option value="">Select experience</option>
+                                    <option value="1-2">1-2 years</option>
+                                    <option value="3-5">3-5 years</option>
+                                    <option value="6-10">6-10 years</option>
+                                    <option value="10+">10+ years</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="installationsCompleted">Installations Completed *</label>
+                                <select id="installationsCompleted" name="installationsCompleted" required>
+                                    <option value="">Select range</option>
+                                    <option value="1-10">1-10</option>
+                                    <option value="11-50">11-50</option>
+                                    <option value="51-100">51-100</option>
+                                    <option value="101-500">101-500</option>
+                                    <option value="500+">500+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceAreas">Service Areas *</label>
+                            <textarea id="serviceAreas" name="serviceAreas" rows="3" placeholder="List the cities, counties, or regions you serve" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specializations">Specializations</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specializations" value="residential">
+                                    <span class="checkmark"></span>
+                                    Residential Solar
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specializations" value="commercial">
+                                    <span class="checkmark"></span>
+                                    Commercial Solar
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specializations" value="industrial">
+                                    <span class="checkmark"></span>
+                                    Industrial Solar
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specializations" value="battery">
+                                    <span class="checkmark"></span>
+                                    Battery Storage
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" name="specializations" value="maintenance">
+                                    <span class="checkmark"></span>
+                                    Maintenance & Repair
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-info-circle"></i>
+                            Additional Information
+                        </h3>
+                        
+                        <div class="form-group">
+                            <label for="additionalInfo">Tell us more about your business</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Share any additional information about your experience, team, or what makes your business unique"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="references">References (Optional)</label>
+                            <textarea id="references" name="references" rows="3" placeholder="Provide contact information for professional references"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- File Uploads -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <i class="fas fa-upload"></i>
+                            Required Documents
+                        </h3>
+                        
+                        <div class="upload-grid">
+                            <div class="upload-area">
+                                <i class="fas fa-file-pdf"></i>
+                                <h4>License Certificate</h4>
+                                <p>Upload your contractor license</p>
+                                <input type="file" id="licenseUpload" name="licenseUpload" accept=".pdf,.jpg,.png" style="display: none;">
+                                <button type="button" class="btn btn-outline" onclick="document.getElementById('licenseUpload').click()">Choose File</button>
+                                <span class="file-name" id="licenseFileName"></span>
+                            </div>
+
+                            <div class="upload-area">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Insurance Certificate</h4>
+                                <p>Upload proof of insurance</p>
+                                <input type="file" id="insuranceUpload" name="insuranceUpload" accept=".pdf,.jpg,.png" style="display: none;">
+                                <button type="button" class="btn btn-outline" onclick="document.getElementById('insuranceUpload').click()">Choose File</button>
+                                <span class="file-name" id="insuranceFileName"></span>
+                            </div>
+
+                            <div class="upload-area">
+                                <i class="fas fa-images"></i>
+                                <h4>Portfolio Images</h4>
+                                <p>Upload photos of your work</p>
+                                <input type="file" id="portfolioUpload" name="portfolioUpload" accept=".jpg,.png" multiple style="display: none;">
+                                <button type="button" class="btn btn-outline" onclick="document.getElementById('portfolioUpload').click()">Choose Files</button>
+                                <span class="file-name" id="portfolioFileName"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Submit -->
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#" class="text-link">Terms of Service</a> and <a href="#" class="text-link">Privacy Policy</a>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="marketing">
+                                <span class="checkmark"></span>
+                                I would like to receive marketing communications and updates from MONTELO
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Application
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Application Process</h2>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Submit Application</h3>
+                        <p>Complete and submit your installer application with required documents</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Review & Verification</h3>
+                        <p>We review your application and verify licenses, insurance, and certifications</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Background Check</h3>
+                        <p>Comprehensive background check and reference verification</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Approval & Onboarding</h3>
+                        <p>Upon approval, complete onboarding and start receiving leads</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-sun"></i>
+                        <span class="brand-text">MONTELO</span>
+                    </div>
+                    <p class="footer-description">
+                        Connecting you with the best solar solutions for a sustainable future.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="providers.html">Solar Providers</a></li>
+                        <li><a href="financing.html">Financing</a></li>
+                        <li><a href="installers.html">Installers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">For Businesses</h4>
+                    <ul class="footer-links">
+                        <li><a href="list-business.html">List Your Business</a></li>
+                        <li><a href="become-installer.html">Become Installer</a></li>
+                        <li><a href="dashboard.html">Business Dashboard</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@montelo.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MONTELO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="javascript/script.js"></script>
+    <script src="javascript/become-installer.js"></script>
+</body>
+</html>

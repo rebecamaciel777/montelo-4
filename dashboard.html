@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Dashboard - MONTELO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-sun"></i>
+                        <span class="brand-text">MONTELO</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <span class="welcome-text">Welcome back, SunPower Solutions</span>
+                    <button class="btn btn-outline">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </button>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav">
+                    <button class="theme-toggle" id="mobileThemeToggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Dropdown -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-welcome">Welcome back, SunPower Solutions</div>
+                <button class="btn btn-outline mobile-menu-btn-cta">Settings</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <h1 class="page-title">Business Dashboard</h1>
+            <p class="page-subtitle">Manage your solar business listing and track performance</p>
+        </div>
+    </section>
+
+    <!-- Stats Overview -->
+    <section class="dashboard-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h3>Profile Views</h3>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="stat-number">1,250</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        +12% from last month
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h3>New Leads</h3>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number">45</div>
+                    <div class="stat-change positive">
+                        <i class="fas fa-arrow-up"></i>
+                        +8% from last month
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h3>Messages</h3>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-note">3 unread messages</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <h3>Rating</h3>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number">4.8</div>
+                    <div class="stat-note">124 reviews</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Tabs -->
+    <section class="dashboard-content">
+        <div class="container">
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="profile">Profile</button>
+                    <button class="tab-btn" data-tab="leads">Leads</button>
+                    <button class="tab-btn" data-tab="messages">Messages</button>
+                    <button class="tab-btn" data-tab="billing">Billing</button>
+                </div>
+
+                <!-- Overview Tab -->
+                <div class="tab-content active" id="overview">
+                    <div class="overview-grid">
+                        <!-- Current Plan -->
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-credit-card"></i> Current Plan</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="plan-info">
+                                    <div class="plan-tier">
+                                        <span class="tier-badge premium">Premium</span>
+                                        <span class="plan-price">$99/month</span>
+                                    </div>
+                                    <p>Enhanced visibility with featured placement and lead generation tools</p>
+                                    <div class="plan-actions">
+                                        <button class="btn btn-primary">Upgrade Plan</button>
+                                        <button class="btn btn-outline">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activity -->
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-chart-line"></i> Recent Activity</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <span>New lead from Los Angeles</span>
+                                        <span class="activity-time">2 hours ago</span>
+                                    </div>
+                                    <div class="activity-item">
+                                        <span>Profile viewed 15 times</span>
+                                        <span class="activity-time">Today</span>
+                                    </div>
+                                    <div class="activity-item">
+                                        <span>New 5-star review received</span>
+                                        <span class="activity-time">Yesterday</span>
+                                    </div>
+                                    <div class="activity-item">
+                                        <span>Message from potential client</span>
+                                        <span class="activity-time">2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Performance Chart -->
+                    <div class="dashboard-card full-width">
+                        <div class="card-header">
+                            <h3>Performance Analytics</h3>
+                            <p>Track your business performance over time</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="chart-placeholder">
+                                <i class="fas fa-chart-bar"></i>
+                                <p>Analytics Chart</p>
+                                <span>Performance data visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Tab -->
+                <div class="tab-content" id="profile">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-edit"></i> Edit Business Profile</h3>
+                            <p>Update your business information and improve your listing</p>
+                        </div>
+                        <div class="card-content">
+                            <form class="profile-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="profileBusinessName">Business Name</label>
+                                        <input type="text" id="profileBusinessName" value="SunPower Solutions">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileContactPerson">Contact Person</label>
+                                        <input type="text" id="profileContactPerson" value="John Smith">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="profileEmail">Email</label>
+                                        <input type="email" id="profileEmail" value="info@sunpowersolutions.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profilePhone">Phone</label>
+                                        <input type="tel" id="profilePhone" value="+1 (555) 123-4567">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="profileDescription">Business Description</label>
+                                    <textarea id="profileDescription">Leading solar provider with 15+ years of experience in sustainable energy solutions.</textarea>
+                                </div>
+
+                                <div class="upload-area">
+                                    <i class="fas fa-upload"></i>
+                                    <h4>Update Photos</h4>
+                                    <p>Upload new business photos, project images, or certificates</p>
+                                    <button type="button" class="btn btn-outline">Choose Files</button>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-large">Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leads Tab -->
+                <div class="tab-content" id="leads">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-users"></i> Recent Leads</h3>
+                            <p>Manage and respond to customer inquiries</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="leads-list" id="leadsList">
+                                <!-- Leads will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages Tab -->
+                <div class="tab-content" id="messages">
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-envelope"></i> Messages</h3>
+                            <p>Customer messages and inquiries</p>
+                        </div>
+                        <div class="card-content">
+                            <div class="messages-list" id="messagesList">
+                                <!-- Messages will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Billing Tab -->
+                <div class="tab-content" id="billing">
+                    <div class="billing-grid">
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-credit-card"></i> Current Subscription</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="subscription-details">
+                                    <div class="detail-row">
+                                        <span>Plan:</span>
+                                        <span class="detail-value">Premium</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span>Monthly Cost:</span>
+                                        <span class="detail-value">$99</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span>Next Billing:</span>
+                                        <span class="detail-value">Dec 15, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3>Payment Method</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="payment-details">
+                                    <div class="detail-row">
+                                        <span>Card:</span>
+                                        <span class="detail-value">**** 1234</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span>Expires:</span>
+                                        <span class="detail-value">12/26</span>
+                                    </div>
+                                    <button class="btn btn-outline">Update Card</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h3>Recent Invoices</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="invoices-list" id="invoicesList">
+                                <!-- Invoices will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-sun"></i>
+                        <span class="brand-text">MONTELO</span>
+                    </div>
+                    <p class="footer-description">
+                        Connecting you with the best solar solutions for a sustainable future.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="providers.html">Solar Providers</a></li>
+                        <li><a href="financing.html">Financing</a></li>
+                        <li><a href="installers.html">Installers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">For Businesses</h4>
+                    <ul class="footer-links">
+                        <li><a href="list-business.html">List Your Business</a></li>
+                        <li><a href="become-installer.html">Become Installer</a></li>
+                        <li><a href="dashboard.html">Business Dashboard</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@montelo.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MONTELO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/dashboard.js"></script>
+</body>
+</html>

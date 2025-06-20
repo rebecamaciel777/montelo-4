@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Financing - MONTELO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-sun"></i>
+                        <span class="brand-text">MONTELO</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="providers.html" class="nav-link">Providers</a>
+                    <a href="financing.html" class="nav-link active">Financing</a>
+                    <a href="installers.html" class="nav-link">Installers</a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav">
+                    <button class="theme-toggle" id="mobileThemeToggle">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Dropdown -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="providers.html" class="mobile-menu-link">Providers</a>
+                <a href="financing.html" class="mobile-menu-link">Financing</a>
+                <a href="installers.html" class="mobile-menu-link">Installers</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Solar Financing Options</h1>
+            <p class="page-subtitle">Explore flexible financing solutions to make solar energy affordable for your home or business</p>
+        </div>
+    </section>
+
+    <!-- Financing Options Overview -->
+    <section class="financing-options">
+        <div class="container">
+            <h2 class="section-title">Choose Your Financing Path</h2>
+            <div class="financing-grid">
+                <div class="financing-card">
+                    <div class="financing-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Cash Purchase</h3>
+                    <p>Pay upfront and own your system immediately</p>
+                    <div class="pros-cons">
+                        <div class="pros">
+                            <h4>Pros:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> No interest payments</li>
+                                <li><i class="fas fa-check"></i> Maximum savings</li>
+                                <li><i class="fas fa-check"></i> Full ownership</li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <h4>Considerations:</h4>
+                            <ul>
+                                <li>• High upfront cost</li>
+                                <li>• Large initial investment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="financing-card">
+                    <div class="financing-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Solar Loan</h3>
+                    <p>Finance your system with competitive rates</p>
+                    <div class="pros-cons">
+                        <div class="pros">
+                            <h4>Pros:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Low monthly payments</li>
+                                <li><i class="fas fa-check"></i> Own your system</li>
+                                <li><i class="fas fa-check"></i> Tax benefits</li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <h4>Considerations:</h4>
+                            <ul>
+                                <li>• Interest payments</li>
+                                <li>• Credit requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="financing-card">
+                    <div class="financing-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Solar Lease</h3>
+                    <p>Start with low payments and eventually own</p>
+                    <div class="pros-cons">
+                        <div class="pros">
+                            <h4>Pros:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Low initial cost</li>
+                                <li><i class="fas fa-check"></i> Flexible terms</li>
+                                <li><i class="fas fa-check"></i> Maintenance included</li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <h4>Considerations:</h4>
+                            <ul>
+                                <li>• Higher total cost</li>
+                                <li>• Longer payback period</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="financing-card">
+                    <div class="financing-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Power Purchase Agreement</h3>
+                    <p>Pay only for the power you use</p>
+                    <div class="pros-cons">
+                        <div class="pros">
+                            <h4>Pros:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> No upfront cost</li>
+                                <li><i class="fas fa-check"></i> Immediate savings</li>
+                                <li><i class="fas fa-check"></i> Maintenance included</li>
+                            </ul>
+                        </div>
+                        <div class="cons">
+                            <h4>Considerations:</h4>
+                            <ul>
+                                <li>• Don't own system</li>
+                                <li>• Long-term contract</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Form -->
+    <section class="consultation-section">
+        <div class="container">
+            <div class="consultation-header">
+                <h2>Want to Speak to a Finance Partner?</h2>
+                <p>Get personalized financing advice from our trusted partners</p>
+            </div>
+
+            <div class="consultation-form-container">
+                <form class="consultation-form" id="consultationForm">
+                    <h3>Get Financing Consultation</h3>
+                    <p>Fill out the form below and our finance partners will contact you with personalized options</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="consultName">Full Name</label>
+                            <input type="text" id="consultName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="consultEmail">Email</label>
+                            <input type="email" id="consultEmail" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="consultPhone">Phone Number</label>
+                            <input type="tel" id="consultPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="systemSize">Estimated System Size</label>
+                            <select id="systemSize" name="systemSize">
+                                <option value="">Select size</option>
+                                <option value="small">Small (1-5kW)</option>
+                                <option value="medium">Medium (5-10kW)</option>
+                                <option value="large">Large (10-20kW)</option>
+                                <option value="commercial">Commercial (20kW+)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="propertyType">Property Type</label>
+                        <select id="propertyType" name="propertyType">
+                            <option value="">Select property type</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consultMessage">Additional Information</label>
+                        <textarea id="consultMessage" name="message" placeholder="Tell us about your project, timeline, or any specific requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large btn-full">
+                        Request Financing Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finance Partners -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-header">
+                <h2>Our Finance Partners</h2>
+                <div class="partner-cta">
+                    <p>Are you a lender?</p>
+                    <a href="list-business.html" class="btn btn-outline">
+                        <i class="fas fa-plus"></i>
+                        Partner with Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="partners-grid" id="partnersGrid">
+                <!-- Partners will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-sun"></i>
+                        <span class="brand-text">MONTELO</span>
+                    </div>
+                    <p class="footer-description">
+                        Connecting you with the best solar solutions for a sustainable future.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="providers.html">Solar Providers</a></li>
+                        <li><a href="financing.html">Financing</a></li>
+                        <li><a href="installers.html">Installers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">For Businesses</h4>
+                    <ul class="footer-links">
+                        <li><a href="list-business.html">List Your Business</a></li>
+                        <li><a href="become-installer.html">Become Installer</a></li>
+                        <li><a href="dashboard.html">Business Dashboard</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@montelo.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MONTELO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/financing.js"></script>
+</body>
+</html>
