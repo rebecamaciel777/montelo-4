@@ -68,7 +68,7 @@ const partnersData = [
     }
 ];
 
-class FinancingManager {
+class PlansManager {
     constructor() {
         this.partners = partnersData;
         this.init();
@@ -254,6 +254,6 @@ function learnMore(partnerId) {
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('partnersGrid')) {
-        new FinancingManager();
+        new PlansManager();
     }
 });

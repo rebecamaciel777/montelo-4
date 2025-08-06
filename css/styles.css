@@ -91,7 +91,21 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+.valor {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(135deg, var(--blue-600), var(--orange-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+}
 
+.valor span {
+    font-size: 0.4em !important; /* /month muito menor */
+    color: #666 !important;
+    font-weight: normal;
+    vertical-align: middle;
+}
 .nav-links {
     display: flex;
     align-items: center;
@@ -815,7 +829,7 @@ body {
     color: var(--text-primary);
 }
 
-/* Financing Styles */
+/* Plans Styles */
 .financing-options {
     padding: 4rem 0;
 }
@@ -1199,17 +1213,36 @@ body {
 }
 
 .pricing-card {
-    background: var(--bg-card);
-    backdrop-filter: blur(10px);
-    border: 2px solid var(--border-color);
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    z-index: 3;
+    white-space: nowrap;
 }
-
+.popular-badge {
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(135deg, #ff6b35, #f7931e);
+        color: white;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        z-index: 3;
+        white-space: nowrap;
+        transition: all 0.3s ease;
+}
 .pricing-card.popular::before {
     content: 'Most Popular';
     position: absolute;
@@ -1229,7 +1262,7 @@ body {
     box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
 }
 
-.pricing-card:hover {
+.pricing-card:hover{
     transform: translateY(-5px);
     box-shadow: var(--shadow);
 }
