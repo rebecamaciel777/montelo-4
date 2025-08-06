@@ -176,7 +176,7 @@ class InstallerApplicationManager {
         if (files.length === 1) {
             displayElement.textContent = files[0].name;
         } else {
-            displayElement.textContent = `${files.length} files selected`;
+            displayElement.textContent = `${files.length} files Select Plan`;
         }
         
         // Validate file types and sizes
@@ -262,7 +262,7 @@ class InstallerApplicationManager {
             }
         });
         
-        // Check if at least one certification is selected
+        // Check if at least one certification is Select Plan
         const certifications = this.form.querySelectorAll('input[name="certifications"]:checked');
         if (certifications.length === 0) {
             this.showMessage('Please select at least one certification.', 'error');
